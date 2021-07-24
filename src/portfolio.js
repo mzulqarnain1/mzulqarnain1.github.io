@@ -214,7 +214,7 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "React JS Nanodegree",
+      title: "ReactJS Nanodegree",
       subtitle:
         "In this Nanodegree program offered by Udacity.com, I learnt how to build declarative user interfaces for the web with React, and for iOS and Android with React Native. I also learnt how to manage state more predictably in applications with Redux.",
       image: require("./assets/images/react-logo.png"),
@@ -230,9 +230,9 @@ const achievementSection = {
       ]
     },
     {
-      title: "Cloud Developer Nanodegree",
+      title: "AWS Cloud Developer Nanodegree",
       subtitle:
-        "In this Nanodegree program offered by Udacity.com, I am learning the fundamentals of cloud development and deployment with AWS. Then, build different apps leveraging microservices, Kubernetes clusters, and serverless application technology.",
+        "In this Nanodegree program offered by Udacity.com, I am learning the fundamentals of cloud development and deployment with AWS. Then, building different apps leveraging microservices, Kubernetes clusters, and serverless application technology.",
       image: require("./assets/images/aws-logo.png"),
       footerLink: [
         {
