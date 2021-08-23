@@ -236,6 +236,10 @@ const achievementSection = {
       image: require("./assets/images/aws-logo.png"),
       footerLink: [
         {
+          name: "Certificate",
+          url: "https://confirm.udacity.com/MGAVGFVQ"
+        },
+        {
           name: "Program Curriculum",
           url: "https://www.udacity.com/course/cloud-developer-nanodegree--nd9990"
         }
