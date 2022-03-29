@@ -39,9 +39,9 @@ const skillsSection = {
   subTitle: "FULL STACK DEVELOPER WHO LOVES TO BUILD WEB APPLICATIONS",
   skills: [
     emoji(
-      "⚡ Develop highly scalable and reliable Web Application Backends using Python/Django/REST"
+      "⚡ Develop highly scalable and reliable Web Application Backends using Python/Django/Flask/FastAPI"
     ),
-    emoji("⚡ Develop blazing fast Web Application Frontends using ReactJS and Redux"),
+    emoji("⚡ Develop blazing fast Web Application Frontends using ReactJS and NextJS"),
     emoji(
       "⚡ Deploy Full Stack Web Application on AWS"
     )
@@ -132,13 +132,23 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "Sr. Python Engineer",
+      company: "Stack Builders",
+      companylogo: require("./assets/images/sb-logo.jpg"),
+      date: "October 2021 – Present",
+      desc: "Working as a Senior Python Developer",
+      descBullets: [
+        "Python, Flask, Flask RestX, Docker, MariaDB, AWS, Unit Testing, Git, Agile Scrum"
+      ]
+    },
+    {
       role: "Sr. Software Engineer",
       company: "Arbisoft",
       companylogo: require("./assets/images/arbisoft-logo.jpg"),
-      date: "January 2018 – Present",
+      date: "January 2018 – November 2021",
       desc: "Working as a Senior Software Engineer",
       descBullets: [
-        "Python, Django, Docker, PostgreSQL, NoSQL, AWS, Django, Unit Testing, Git, Docker, Agile Scrum, CI/CD Pipelines"
+        "Python, Django, Docker, PostgreSQL, NoSQL, AWS, Django, Unit Testing, Git, Agile Scrum, CI/CD Pipelines"
       ]
     },
     {
@@ -159,7 +169,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
@@ -168,6 +178,18 @@ const bigProjects = {
   title: "Products",
   subtitle: "Some products I have worked on",
   projects: [
+    {
+      image: require("./assets/images/fkl-logo.jpg"),
+      projectName: "FindKeepLove",
+      projectDesc: "FindKeepLove partners with brands, retailers, and consumers internet companies to offer exciting sweepstakes opportunities.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://www.findkeep.love/"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
     {
       image: require("./assets/images/edx-logo.png"),
       projectName: "edX",

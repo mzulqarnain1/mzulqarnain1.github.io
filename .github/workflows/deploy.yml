@@ -21,6 +21,10 @@ jobs:
           persist-credentials: false
 
       - name: Install and Build 🔧 # Build the Project
+        env:
+          REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: mzulqarnain1
+          USE_GITHUB_DATA: true
         run: |
           npm install
           npm run build
