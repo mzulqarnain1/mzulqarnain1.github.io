@@ -1,43 +1,43 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9b0e29e337d311681d2b744971c9bbc7",
+    "revision": "fbd91753c50dfaac24d800b2ea1d215b",
     "url": "/index.html"
   },
   {
-    "revision": "09ba1c7aa0832135bea8",
+    "revision": "d27760506284d94f6d25",
     "url": "/static/css/3.25727338.chunk.css"
   },
   {
-    "revision": "f90b80374c787023eb1a",
+    "revision": "44421e0bca3c74cb45a6",
     "url": "/static/css/4.a8329f31.chunk.css"
   },
   {
-    "revision": "3d190fa971bf85f0db50",
+    "revision": "c3fbbb91895cbe70c375",
     "url": "/static/css/main.c9a11a68.chunk.css"
   },
   {
-    "revision": "8f2110046e6194ed1a36",
-    "url": "/static/js/2.b707ed08.chunk.js"
+    "revision": "b4fbfbba3729d80d277d",
+    "url": "/static/js/2.7ddb881f.chunk.js"
   },
   {
     "revision": "6e1d2efc12a1ac972ff1f942df7eb0bd",
-    "url": "/static/js/2.b707ed08.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.7ddb881f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "09ba1c7aa0832135bea8",
-    "url": "/static/js/3.83331acd.chunk.js"
+    "revision": "d27760506284d94f6d25",
+    "url": "/static/js/3.259fd339.chunk.js"
   },
   {
-    "revision": "f90b80374c787023eb1a",
-    "url": "/static/js/4.96f441d0.chunk.js"
+    "revision": "44421e0bca3c74cb45a6",
+    "url": "/static/js/4.a8705372.chunk.js"
   },
   {
-    "revision": "3d190fa971bf85f0db50",
-    "url": "/static/js/main.f4e6f03f.chunk.js"
+    "revision": "c3fbbb91895cbe70c375",
+    "url": "/static/js/main.edba7dd7.chunk.js"
   },
   {
-    "revision": "48496297e82866a3d564",
-    "url": "/static/js/runtime-main.004f8f87.js"
+    "revision": "868645bb32975e0a7ac1",
+    "url": "/static/js/runtime-main.81a7deb5.js"
   },
   {
     "revision": "a3752c4bf72688b3db38d0911cf75f61",
@@ -68,6 +68,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/edx-logo.4452c9c0.png"
   },
   {
+    "revision": "33eb8b9565cbc381d7f66c18e0fd5e91",
+    "url": "/static/media/fkl-logo.33eb8b95.jpg"
+  },
+  {
     "revision": "52be31441c8cf8a8a16bd7a228d428bf",
     "url": "/static/media/manOnTable.52be3144.svg"
   },
@@ -82,6 +86,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0000e8364f311878873169dd1883241d",
     "url": "/static/media/react-logo.0000e836.png"
+  },
+  {
+    "revision": "4cc51b6894d3674bf729239e7adea39b",
+    "url": "/static/media/sb-logo.4cc51b68.jpg"
   },
   {
     "revision": "3440939881da8339d1597e8d77cdf850",
