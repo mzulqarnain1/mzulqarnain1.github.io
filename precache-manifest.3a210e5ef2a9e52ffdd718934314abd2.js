@@ -1,43 +1,43 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fbd91753c50dfaac24d800b2ea1d215b",
+    "revision": "819679da13e6418654bd364095d31d48",
     "url": "/index.html"
   },
   {
-    "revision": "d27760506284d94f6d25",
+    "revision": "c0bb582afdbb1da9a77d",
     "url": "/static/css/3.25727338.chunk.css"
   },
   {
-    "revision": "44421e0bca3c74cb45a6",
+    "revision": "87514ac66b8d256a82c4",
     "url": "/static/css/4.a8329f31.chunk.css"
   },
   {
-    "revision": "c3fbbb91895cbe70c375",
+    "revision": "e1bc08a803c395d75623",
     "url": "/static/css/main.c9a11a68.chunk.css"
   },
   {
-    "revision": "b4fbfbba3729d80d277d",
-    "url": "/static/js/2.7ddb881f.chunk.js"
+    "revision": "53ac4ac91027b0829910",
+    "url": "/static/js/2.297d2f96.chunk.js"
   },
   {
     "revision": "6e1d2efc12a1ac972ff1f942df7eb0bd",
-    "url": "/static/js/2.7ddb881f.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.297d2f96.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d27760506284d94f6d25",
-    "url": "/static/js/3.259fd339.chunk.js"
+    "revision": "c0bb582afdbb1da9a77d",
+    "url": "/static/js/3.96a6724f.chunk.js"
   },
   {
-    "revision": "44421e0bca3c74cb45a6",
-    "url": "/static/js/4.a8705372.chunk.js"
+    "revision": "87514ac66b8d256a82c4",
+    "url": "/static/js/4.ccb3baf5.chunk.js"
   },
   {
-    "revision": "c3fbbb91895cbe70c375",
-    "url": "/static/js/main.edba7dd7.chunk.js"
+    "revision": "e1bc08a803c395d75623",
+    "url": "/static/js/main.bfab2472.chunk.js"
   },
   {
-    "revision": "868645bb32975e0a7ac1",
-    "url": "/static/js/runtime-main.81a7deb5.js"
+    "revision": "076a0efd580dd6102493",
+    "url": "/static/js/runtime-main.9e3e1edf.js"
   },
   {
     "revision": "a3752c4bf72688b3db38d0911cf75f61",
@@ -54,6 +54,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6e189f8560f64c51ef42304fbba3ca2c",
     "url": "/static/media/aws-logo.6e189f85.png"
+  },
+  {
+    "revision": "7368707e0847955846421bef28c8a39d",
+    "url": "/static/media/bsv-logo.7368707e.jpg"
   },
   {
     "revision": "51cf7192327488da3d2a171280680c16",
