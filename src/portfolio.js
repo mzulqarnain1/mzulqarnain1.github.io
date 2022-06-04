@@ -7,7 +7,7 @@
 import emoji from "react-easy-emoji";
 
 const illustration = {
-  animated: false // set to false to use static SVG
+  animated: true // set to false to use static SVG
 };
 
 const greeting = {
@@ -27,7 +27,6 @@ const socialMediaLinks = {
   github: "https://github.com/mzulqarnain1",
   linkedin: "https://www.linkedin.com/in/mzulqarnain1/",
   gmail: "zulqarnain.mailbox@gmail.com",
-  facebook: "https://www.facebook.com/zulqarnain02",
   // Instagram and Twitter are also supported in the links!
   display: true // Set true to display this section, defaults to false
 };
@@ -36,7 +35,7 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "FULL STACK DEVELOPER WHO LOVES TO BUILD WEB APPLICATIONS",
+  subTitle: "FULL STACK DEVELOPER WHO LOVES TO BUILD AWESOME WEB APPLICATIONS",
   skills: [
     emoji(
       "⚡ Develop highly scalable and reliable Web Application Backends using Python/Django/Flask/FastAPI"
@@ -132,11 +131,21 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Sr. Python Engineer",
+      role: "Sr. Software Engineer",
+      company: "Basis Set Ventures",
+      companylogo: require("./assets/images/bsv-logo-2.jpg"),
+      date: "May 2022 – Present",
+      desc: "Working as a Python/Django Developer",
+      descBullets: [
+        "Python, Django, PostgreSQL, Apache Airflow, Air Table, AWS, Unit Testing, Agile Scrum"
+      ]
+    },
+    {
+      role: "Sr. Software Engineer",
       company: "Stack Builders",
       companylogo: require("./assets/images/sb-logo.jpg"),
-      date: "October 2021 – Present",
-      desc: "Working as a Senior Python Developer",
+      date: "October 2021 – April 2022",
+      desc: "Working as a Python/Flask Developer",
       descBullets: [
         "Python, Flask, Flask RestX, Docker, MariaDB, AWS, Unit Testing, Git, Agile Scrum"
       ]
@@ -176,8 +185,20 @@ const openSource = {
 
 const bigProjects = {
   title: "Products",
-  subtitle: "Some products I have worked on",
+  subtitle: "Products that I have worked on",
   projects: [
+    {
+      image: require("./assets/images/bsv-logo.jpg"),
+      projectName: "Basis Set Ventures",
+      projectDesc: "Basis Set Ventures is an early-stage investment firm focused on artificial intelligence and its practical application.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://www.basisset.ventures/"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
     {
       image: require("./assets/images/fkl-logo.jpg"),
       projectName: "FindKeepLove",
