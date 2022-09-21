@@ -14,7 +14,7 @@ const greeting = {
   username: "M. Zulqarnain",
   title: "Hi, I'm Zulqarnain",
   subTitle: emoji(
-    "A passionate Full Stack Engineer 🚀 having 5 years experience of building Web applications with Python/Django/ReactJS and some other cool libraries and frameworks."
+    "A passionate Full Stack Engineer 🚀 having 6 years experience of building Web applications with Python/Django/ReactJS and some other cool libraries and frameworks."
   ),
   resumeLink:
     "https://docs.google.com/document/d/1Ld2XgLAIgZIRkYgvjFf23aUbt052yig-/view?usp=sharing",
@@ -137,7 +137,7 @@ const workExperiences = {
       date: "May 2022 – Present",
       desc: "Working as a Python/Django Developer",
       descBullets: [
-        "Python, Django, PostgreSQL, Apache Airflow, Air Table, AWS, Unit Testing, Agile Scrum"
+        "Python, Django, PostgreSQL, SQLAlchemy, Docker, Apache Airflow, Air Table, AWS, Unit Testing, Agile Scrum"
       ]
     },
     {
