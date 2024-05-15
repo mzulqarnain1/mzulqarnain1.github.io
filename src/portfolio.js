@@ -14,7 +14,7 @@ const greeting = {
   username: "M. Zulqarnain",
   title: "Hi, I'm Zulqarnain",
   subTitle: emoji(
-    "A passionate Full Stack Engineer 🚀 having 6 years experience of building Web applications with Python/Django/ReactJS and some other cool libraries and frameworks."
+    "A passionate Full Stack Engineer 🚀 having 8 years experience of building Web applications with Python/Django/ReactJS and some other cool libraries and frameworks."
   ),
   resumeLink:
     "https://docs.google.com/document/d/1Ld2XgLAIgZIRkYgvjFf23aUbt052yig-/view?usp=sharing",
