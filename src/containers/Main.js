@@ -21,29 +21,28 @@ import Profile from "./profile/Profile";
 export default class Main extends Component {
   constructor(props) {
     super(props);
+    // Set isDark to false permanently
     this.state = {
       isDark: false
     };
   }
 
+  // No need to check for dark mode preference or load from localStorage
   componentDidMount() {
-    if (localStorage.getItem("isDark") === null) {
-      const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
-      localStorage.setItem("isDark", darkPref.matches);
-    }
-    this.setState({isDark: JSON.parse(localStorage.getItem("isDark"))});
+    // Always use light mode
+    localStorage.setItem("isDark", false);
   }
+
+  // Keep this method but make it do nothing (for compatibility with StyleContext)
   changeTheme = () => {
-    this.setState({isDark: !this.state.isDark}, () => {
-      localStorage.setItem("isDark", this.state.isDark);
-    });
+    // Do nothing - we're keeping light mode only
   };
 
   render() {
     return (
-      <div className={this.state.isDark ? "dark-mode" : null}>
+      <div>
         <StyleProvider
-          value={{isDark: this.state.isDark, changeTheme: this.changeTheme}}
+          value={{isDark: false, changeTheme: this.changeTheme}}
         >
           <Header />
           <Greeting />
