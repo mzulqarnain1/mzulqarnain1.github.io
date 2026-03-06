@@ -14,7 +14,7 @@ const greeting = {
   username: "M. Zulqarnain",
   title: "Hi, I'm Zulqarnain",
   subTitle: emoji(
-    "A passionate Full Stack Engineer 🚀 having 8 years experience of building Web applications with Python/Django/ReactJS and some other cool libraries and frameworks."
+    "A passionate Full Stack Engineer 🚀 having 9+ years experience of building Web applications with Python/Django/ReactJS and some other cool libraries and frameworks."
   ),
   resumeLink:
     "https://docs.google.com/document/d/1Ld2XgLAIgZIRkYgvjFf23aUbt052yig-/view?usp=sharing",
@@ -135,9 +135,11 @@ const workExperiences = {
       company: "Basis Set Ventures",
       companylogo: require("./assets/images/bsv-logo-2.jpg"),
       date: "May 2022 – Present",
-      desc: "Working as a Python/Django Developer",
+      desc: "Backend development with Python/Django/FastAPI and AI-driven workflow automation.",
       descBullets: [
-        "Python, Django, PostgreSQL, SQLAlchemy, Docker, Apache Airflow, Air Table, AWS, Unit Testing, Agile Scrum"
+        "Working with Python, Django, FastAPI, PostgreSQL, SQLAlchemy, Docker, Apache Airflow, AWS, Kubernetes",
+        "Recently expanded into AI-driven workflow automation, building and integrating LLM-powered systems, developing MCP servers, creating Claude Skills, and connecting multiple AI tools to automate development and operational workflows.",
+        "Experienced in designing backend services that combine traditional web architectures with modern AI-assisted automation."
       ]
     },
     {
