@@ -14,10 +14,10 @@ const greeting = {
   username: "M. Zulqarnain",
   title: "Hi, I'm Zulqarnain",
   subTitle: emoji(
-    "A passionate Full Stack Engineer 🚀 having 9+ years experience of building Web applications with Python/Django/ReactJS and some other cool libraries and frameworks."
+    "A Senior Software & Applied AI Engineer 🚀 with nearly a decade of experience designing and scaling backend systems across edtech, travel search, healthcare SaaS, and AI-driven investment platforms. Core expertise in Python, Django, and FastAPI — complemented by hands-on experience with AWS, data engineering, and agentic AI workflows."
   ),
   resumeLink:
-    "https://docs.google.com/document/d/1Ld2XgLAIgZIRkYgvjFf23aUbt052yig-/view?usp=sharing",
+    "https://docs.google.com/document/d/1yU6obaAtZmotQwO8ZJmjApOCeSW0-ck0/",
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -35,14 +35,14 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "FULL STACK DEVELOPER WHO LOVES TO BUILD AWESOME WEB APPLICATIONS",
+  subTitle: "SENIOR SOFTWARE & APPLIED AI ENGINEER BUILDING SCALABLE BACKENDS AND INTELLIGENT SYSTEMS",
   skills: [
     emoji(
-      "⚡ Develop highly scalable and reliable Web Application Backends using Python/Django/Flask/FastAPI"
+      "⚡ Design and scale backend systems using Python, Django, and FastAPI across distributed, high-availability architectures"
     ),
-    emoji("⚡ Develop blazing fast Web Application Frontends using ReactJS and NextJS"),
+    emoji("⚡ Build and integrate agentic AI workflows, LLM-powered pipelines, and MCP servers for intelligent automation"),
     emoji(
-      "⚡ Deploy Full Stack Web Application on AWS"
+      "⚡ Engineer data infrastructure, ETL pipelines, and full-stack web applications deployed on AWS"
     )
   ],
 
@@ -51,40 +51,40 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "AWS",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
       skillName: "Python",
       fontAwesomeClassname: "fab fa-python"
+    },
+    {
+      skillName: "AWS",
+      fontAwesomeClassname: "fab fa-aws"
     },
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
     },
     {
+      skillName: "TypeScript",
+      fontAwesomeClassname: "fas fa-code"
+    },
+    {
       skillName: "ReactJS",
       fontAwesomeClassname: "fab fa-react"
     },
     {
-      skillName: "SQL",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "Wordpress",
-      fontAwesomeClassname: "fab fa-wordpress"
+      skillName: "Node.js",
+      fontAwesomeClassname: "fab fa-node"
     },
     {
       skillName: "Docker",
       fontAwesomeClassname: "fab fa-docker"
     },
     {
-      skillName: "HTML5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "SQL",
+      fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "Bootstrap",
-      fontAwesomeClassname: "fab fa-bootstrap"
+      skillName: "Git",
+      fontAwesomeClassname: "fab fa-git-alt"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -131,45 +131,55 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Sr. Software Engineer",
+      role: "Senior Data & Software Engineer",
       company: "Basis Set Ventures",
       companylogo: require("./assets/images/bsv-logo-2.jpg"),
-      date: "May 2022 – Present",
-      desc: "Backend development with Python/Django/FastAPI and AI-driven workflow automation.",
+      date: "May 2022 – Mar 2026",
+      desc: "Part of a 3-person engineering team building and maintaining the firm's core AI-driven investment platform across the full stack.",
       descBullets: [
-        "Working with Python, Django, FastAPI, PostgreSQL, SQLAlchemy, Docker, Apache Airflow, AWS, Kubernetes",
-        "Recently expanded into AI-driven workflow automation, building and integrating LLM-powered systems, developing MCP servers, creating Claude Skills, and connecting multiple AI tools to automate development and operational workflows.",
-        "Experienced in designing backend services that combine traditional web architectures with modern AI-assisted automation."
+        "Proposed and led the migration of the main product (Pascal) from Django templates to a modern FastAPI and ReactJS stack, owning the architectural decision and its implementation.",
+        "Designed and maintained data pipelines that fetched and processed thousands of viable companies and startups daily, covering company profiles, GitHub activity, and founder backgrounds across a database of 500,000+ companies.",
+        "Solely designed and built an end-to-end founder enrichment pipeline combining LinkedIn scraping, Google search scraping, and third-party tools like PhantomBuster, with full logging and step-level tracking.",
+        "Built a social presence tracking module monitoring follower counts and activity across GitHub, Product Hunt, YCombinator, Discord, and Twitter for every company in the database.",
+        "Integrated LLM-powered automations to support business case evaluation, data filtration, categorization, and AI-driven decision workflows.",
+        "Stack: Python · Django · FastAPI · PostgreSQL · AWS · Docker · Apache Airflow · Argo Workflows · Next.js · MCP · Vector Databases · Agentic AI Workflows"
       ]
     },
     {
-      role: "Sr. Software Engineer",
+      role: "Senior Software Engineer",
       company: "Stack Builders",
       companylogo: require("./assets/images/sb-logo.jpg"),
-      date: "October 2021 – April 2022",
-      desc: "Working as a Python/Flask Developer",
+      date: "Oct 2021 – Apr 2022",
+      desc: "Senior Software Engineer on the backend team at FindKeepLove, a platform where fashion and lifestyle brands run sweepstakes campaigns to engage wide audiences.",
       descBullets: [
-        "Python, Flask, Flask RestX, Docker, MariaDB, AWS, Unit Testing, Git, Agile Scrum"
+        "Designed, developed, and maintained new features while resolving high-priority production issues across a Flask backend and ReactJS frontend.",
+        "Built a new recurring-payment and subscription-billing service from scratch with retry logic and automated alerting.",
+        "Stack: Python · Flask · ReactJS · MariaDB · Celery · Redis · Docker · CircleCI"
       ]
     },
     {
-      role: "Sr. Software Engineer",
+      role: "Senior Software Engineer",
       company: "Arbisoft",
       companylogo: require("./assets/images/arbisoft-logo.jpg"),
-      date: "January 2018 – November 2021",
-      desc: "Working as a Senior Software Engineer",
+      date: "Jan 2018 – Nov 2021",
+      desc: "Served two major clients — edX and Wanderu — across infrastructure maintenance and travel provider integrations.",
       descBullets: [
-        "Python, Django, Docker, PostgreSQL, NoSQL, AWS, Django, Unit Testing, Git, Agile Scrum, CI/CD Pipelines"
+        "Worked directly with an edX Engineering Manager to maintain infrastructure across 140+ microservices, handling dependency upgrades, CI/CD updates, deprecations, and security patches at scale.",
+        "Built, maintained, and debugged 30+ ground and rail travel provider integrations for Wanderu, including major European providers such as FlixBus, Trenitalia, and RailEasy, covering thousands of stations and significant geolocation/maps API work.",
+        "Owned end-to-end integration for Trenitalia, RailEasy, and several other providers, handling both search and booking flows including credit card payment processing.",
+        "Stack: Python · Django · ReactJS · PostgreSQL · MongoDB · AWS · Kubernetes · Jenkins · GoCD"
       ]
     },
     {
       role: "Software Engineer",
       company: "QC Technologies",
       companylogo: require("./assets/images/qc-logo.png"),
-      date: "October 2016 – January 2018",
-      desc: "Worked as Full Stack Software Engineer",
+      date: "Nov 2016 – Jan 2018",
+      desc: "Full-stack developer in the healthcare domain on Vital Interaction, an automated patient communication platform serving healthcare organizations across the US.",
       descBullets: [
-        "Python, Django, MySQL, Python Unit Testing, Git, Vagrant, Agile Scrum"
+        "Integrated hundreds of US medical facilities into the platform's appointment-automation portal using two-way SMS, email, and IVR workflows.",
+        "Shipped web application features and backend services supporting mobile applications, with active involvement in planning, architecture design, and direct client interaction.",
+        "Stack: Python · Django · MySQL · jQuery"
       ]
     }
   ]
