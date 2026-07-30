@@ -24,7 +24,10 @@ export default function Projects() {
           throw result;
         })
         .then(response => {
-          setrepoFunction(response.data.user.pinnedItems.edges);
+          const edges = response.data.user.pinnedItems.edges.filter(
+            edge => edge.node
+          );
+          setrepoFunction(edges);
         })
         .catch(function (error) {
           console.log(error);

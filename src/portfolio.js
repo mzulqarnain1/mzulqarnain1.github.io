@@ -14,7 +14,7 @@ const greeting = {
   username: "M. Zulqarnain",
   title: "Hi, I'm Zulqarnain",
   subTitle: emoji(
-    "A Senior Software & Applied AI Engineer 🚀 with nearly a decade of experience designing and scaling backend systems across edtech, travel search, healthcare SaaS, and AI-driven investment platforms. Core expertise in Python, Django, and FastAPI — complemented by hands-on experience with AWS, data engineering, and agentic AI workflows."
+    "A Senior Software & Applied AI Engineer 🚀 with a decade of experience designing and scaling backend systems across edtech, travel search, healthcare SaaS, and AI-driven investment platforms. Core expertise in Python, Django, and FastAPI — complemented by hands-on experience with AWS, data engineering, and agentic AI workflows."
   ),
   resumeLink:
     "https://docs.google.com/document/d/1yU6obaAtZmotQwO8ZJmjApOCeSW0-ck0/",
