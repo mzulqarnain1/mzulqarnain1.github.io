@@ -2,8 +2,12 @@ import React, {useState, createRef} from "react";
 import "./ExperienceCard.scss";
 import ColorThief from "colorthief";
 
+const VISIBLE_BULLET_COUNT = 3;
+const STACK_PREFIX = "Stack:";
+
 export default function ExperienceCard({cardInfo, isDark}) {
   const [colorArrays, setColorArrays] = useState([]);
+  const [expanded, setExpanded] = useState(false);
   const imgRef = createRef();
 
   function getColorArrays() {
@@ -16,6 +20,20 @@ export default function ExperienceCard({cardInfo, isDark}) {
       ? null
       : "rgb(" + values.join(", ") + ")";
   }
+
+  const allBullets = cardInfo.descBullets || [];
+  const stackLine = allBullets.find(item => item.startsWith(STACK_PREFIX));
+  const bullets = allBullets.filter(item => item !== stackLine);
+  const techStack = stackLine
+    ? stackLine
+        .slice(STACK_PREFIX.length)
+        .split("·")
+        .map(tech => tech.trim())
+        .filter(Boolean)
+    : [];
+  const hasOverflow = bullets.length > VISIBLE_BULLET_COUNT;
+  const visibleBullets =
+    expanded || !hasOverflow ? bullets : bullets.slice(0, VISIBLE_BULLET_COUNT);
 
   const GetDescBullets = ({descBullets, isDark}) => {
     return descBullets
@@ -76,8 +94,35 @@ export default function ExperienceCard({cardInfo, isDark}) {
           {cardInfo.desc}
         </p>
         <ul className="experience-bullets">
-          <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
+          <GetDescBullets descBullets={visibleBullets} isDark={isDark} />
         </ul>
+        {hasOverflow && (
+          <button
+            type="button"
+            className={
+              isDark
+                ? "experience-toggle-btn dark-mode-text"
+                : "experience-toggle-btn"
+            }
+            onClick={() => setExpanded(!expanded)}
+          >
+            {expanded
+              ? "Show less"
+              : `Show ${bullets.length - VISIBLE_BULLET_COUNT} more`}
+          </button>
+        )}
+        {techStack.length > 0 && (
+          <ul className="experience-stack-pills">
+            {techStack.map((tech, i) => (
+              <li
+                key={i}
+                className={isDark ? "stack-pill dark-mode" : "stack-pill"}
+              >
+                {tech}
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </div>
   );

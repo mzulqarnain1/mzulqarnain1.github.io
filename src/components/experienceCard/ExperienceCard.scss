@@ -121,6 +121,50 @@
   margin-bottom: 0;
 }
 
+.experience-toggle-btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0;
+  border: none;
+  background: none;
+  color: $skillsColor;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.experience-toggle-btn:hover {
+  text-decoration: underline;
+}
+
+.experience-stack-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+  max-width: 68ch;
+}
+
+.stack-pill {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.4rem 0.7rem;
+  border-radius: 999px;
+  background-color: $lightBackground3;
+  color: $cardSubtitle;
+  border: 1px solid $lightBorder1;
+  white-space: nowrap;
+}
+
+.stack-pill.dark-mode {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: $textColorDark;
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
 /* Media Query */
 
 @media (max-width: 900px) {

@@ -1,0 +1,77 @@
+.upwork-badge-wrapper {
+  font-family: proxima-nova, Arial, sans-serif;
+  display: inline-block;
+}
+
+.upwork-card {
+  width: 200px;
+  box-sizing: border-box;
+  padding: 24px 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+  color: #14a800;
+  background: radial-gradient(circle at 20% -10%, #6fda44 -80%, #fff 30%),
+    radial-gradient(circle at -20% 20%, #6fda44 -80%, #fff 30%),
+    radial-gradient(circle at 70% 100%, #6fda44 -80%, #fff 30%),
+    radial-gradient(circle at 120% 80%, #6fda44 -80%, #fff 30%);
+  background-blend-mode: multiply;
+  border-radius: 16px;
+  box-shadow: 0 28px 50px rgba(20, 168, 0, 0.28);
+}
+
+.upwork-title {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.upwork-divider {
+  width: 120px;
+  height: 1px;
+  background: #14a800;
+}
+
+.upwork-verified {
+  font-size: 16px;
+  margin-bottom: -6px;
+}
+
+.upwork-logo-lockup {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.upwork-mark {
+  width: 18px;
+  height: 18px;
+}
+
+.upwork-wordmark {
+  font-size: 20px;
+  font-weight: 700;
+  color: #001e00;
+}
+
+.upwork-hire-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 20px;
+  border-radius: 6px;
+  background: #14a800;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5px;
+  text-underline-offset: 2px;
+
+  &:hover {
+    background: #108a00;
+  }
+}

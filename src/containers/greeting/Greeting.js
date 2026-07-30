@@ -9,7 +9,7 @@ import Button from "../../components/button/Button";
 
 import {illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
-import ToptalBadge from "../../components/toptalBadge/ToptalBadge";
+import PlatformBadges from "../../components/platformBadges/PlatformBadges";
 
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
@@ -47,7 +47,7 @@ export default function Greeting() {
                   href={greeting.resumeLink}
                 />
               </div>
-              <ToptalBadge />
+              <PlatformBadges />
             </div>
           </div>
           <div className="greeting-image-div">
