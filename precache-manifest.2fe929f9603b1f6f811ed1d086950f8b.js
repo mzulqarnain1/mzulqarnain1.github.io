@@ -1,43 +1,43 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d2c3c41687b1a759afb911fd8a27f8d7",
+    "revision": "781cac1c4f942b4f8df4bf59ac6de198",
     "url": "/index.html"
   },
   {
-    "revision": "28bb0e3f69fb700ca0dd",
-    "url": "/static/css/3.25727338.chunk.css"
+    "revision": "086cc4c8b8d47059b0f0",
+    "url": "/static/css/3.b8d2ada0.chunk.css"
   },
   {
-    "revision": "e889e2cf834fb8d6dbe1",
-    "url": "/static/css/4.a8329f31.chunk.css"
+    "revision": "7f8df59d1a74ca9fd314",
+    "url": "/static/css/4.4bef6955.chunk.css"
   },
   {
-    "revision": "16e87afced0e16b1e873",
-    "url": "/static/css/main.18c71e05.chunk.css"
+    "revision": "25d428791363e3ee53a7",
+    "url": "/static/css/main.9308ed11.chunk.css"
   },
   {
-    "revision": "71de0e0670951cb36149",
-    "url": "/static/js/2.ea555a61.chunk.js"
+    "revision": "f35c8bc7db013bab3bf2",
+    "url": "/static/js/2.2d84ecc9.chunk.js"
   },
   {
     "revision": "b045256696e9edb485ef902b6be54c14",
-    "url": "/static/js/2.ea555a61.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.2d84ecc9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "28bb0e3f69fb700ca0dd",
-    "url": "/static/js/3.f52756ac.chunk.js"
+    "revision": "086cc4c8b8d47059b0f0",
+    "url": "/static/js/3.03f16de7.chunk.js"
   },
   {
-    "revision": "e889e2cf834fb8d6dbe1",
-    "url": "/static/js/4.a4e8bdae.chunk.js"
+    "revision": "7f8df59d1a74ca9fd314",
+    "url": "/static/js/4.f278eff8.chunk.js"
   },
   {
-    "revision": "16e87afced0e16b1e873",
-    "url": "/static/js/main.4e1b49dd.chunk.js"
+    "revision": "25d428791363e3ee53a7",
+    "url": "/static/js/main.000c1e5f.chunk.js"
   },
   {
-    "revision": "b265796f49e2080fe1ae",
-    "url": "/static/js/runtime-main.86e33be2.js"
+    "revision": "16b45e3a75643abf3717",
+    "url": "/static/js/runtime-main.147c0dea.js"
   },
   {
     "revision": "a3752c4bf72688b3db38d0911cf75f61",
@@ -72,8 +72,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/edx-logo.4452c9c0.png"
   },
   {
-    "revision": "33eb8b9565cbc381d7f66c18e0fd5e91",
-    "url": "/static/media/fkl-logo.33eb8b95.jpg"
+    "revision": "c0c5baa43055f16617faa68421989bbe",
+    "url": "/static/media/fkl-logo.c0c5baa4.jpg"
   },
   {
     "revision": "52be31441c8cf8a8a16bd7a228d428bf",
@@ -102,6 +102,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "13780cdd0144cacdef25486e2c2503f8",
     "url": "/static/media/talksCardBack.13780cdd.svg"
+  },
+  {
+    "revision": "9d0f048209624e0e5503e108a3f9c6b0",
+    "url": "/static/media/tasseled-logo.9d0f0482.svg"
   },
   {
     "revision": "2b141fb270dea339cd8d02b3028a7ab8",
