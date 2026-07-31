@@ -26,3 +26,41 @@
 .subTitle {
   color: $subTitle;
 }
+
+/* Shared section title treatment: accent bar + consistent weight/size scale.
+   Applied alongside each section's own heading class (e.g. "skills-heading
+   section-heading") so section-specific overrides still work. */
+.section-heading {
+  position: relative;
+  display: inline-block;
+  font-size: 56px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: $titleColor;
+}
+
+.section-heading::before {
+  content: "";
+  display: block;
+  width: 46px;
+  height: 4px;
+  border-radius: 2px;
+  margin-bottom: 18px;
+  background: linear-gradient(90deg, $accent, $accentSecondary);
+}
+
+@media (max-width: 1380px) {
+  .section-heading {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 30px;
+  }
+  .section-heading::before {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

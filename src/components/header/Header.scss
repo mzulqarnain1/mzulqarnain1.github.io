@@ -7,24 +7,12 @@
 
 /* header */
 
-.dark-menu {
-  background-color: $darkBackground !important;
-  color: $textColorDark;
-}
-
-.dark-menu li a {
-  color: $textColorDark !important;
-}
-
-.dark-menu li a:hover {
-  background-color: $buttonColor !important;
-}
-
 .header {
   background-color: $lightBackground1;
   max-width: 100%;
   padding: 15px 20px;
   margin: 0px auto;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
 }
 
 .header ul {
@@ -43,11 +31,18 @@
   padding: 15px 20px;
   color: $textColor;
   text-decoration: none;
+  position: relative;
+  transition: color 0.2s ease;
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
   background-color: $headerHoverBG;
+}
+
+.header li a.active {
+  color: $accent;
+  font-weight: 600;
 }
 
 .header .logo {
@@ -58,6 +53,11 @@
   text-decoration: none;
   margin-top: 10px;
   line-height: normal;
+  transition: opacity 0.2s ease;
+}
+
+.header .logo:hover {
+  opacity: 0.75;
 }
 
 .header .logo-name {
@@ -72,8 +72,38 @@
 
 .header .menu {
   clear: both;
-  max-height: 0;
-  transition: max-height 0.2s ease-out;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: min(78vw, 300px);
+  max-height: none;
+  overflow-y: auto;
+  background-color: $lightBackground1;
+  box-shadow: -12px 0 40px rgba(0, 0, 0, 0.12);
+  padding-top: 90px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 30;
+}
+
+.header .menu-btn:checked ~ .menu {
+  transform: translateX(0);
+}
+
+.header .menu-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 20;
+}
+
+.header .menu-btn:checked ~ .menu-backdrop {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* menu icon */
@@ -85,6 +115,7 @@
   padding: 28px 20px;
   position: relative;
   user-select: none;
+  z-index: 31;
 }
 
 .header .menu-icon .navicon {
@@ -96,24 +127,9 @@
   width: 18px;
 }
 
-.header .menu-icon .navicon-dark {
-  background: $textColorDark;
-}
-
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
   background: $iconBackground;
-  content: "";
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all 0.2s ease-out;
-  width: 100%;
-}
-
-.header .menu-icon .navicon-dark:before,
-.header .menu-icon .navicon-dark:after {
-  background: $textColorDark !important;
   content: "";
   display: block;
   height: 100%;
@@ -134,10 +150,6 @@
 
 .header .menu-btn {
   display: none;
-}
-
-.header .menu-btn:checked ~ .menu {
-  max-height: 486px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -169,9 +181,30 @@
     justify-content: space-between;
   }
   .header .menu {
+    position: static;
+    height: auto;
+    width: auto;
     max-height: none;
+    overflow: visible;
+    background: transparent;
+    box-shadow: none;
+    padding-top: 0;
+    transform: none;
+  }
+  .header li a.active::after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 8px;
+    height: 2px;
+    border-radius: 2px;
+    background: $accent;
   }
   .header .menu-icon {
+    display: none;
+  }
+  .header .menu-backdrop {
     display: none;
   }
 }

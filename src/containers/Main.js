@@ -14,53 +14,29 @@ import Podcast from "./podcast/Podcast";
 import Education from "./education/Education";
 import Top from "./topbutton/Top";
 import Twitter from "./twitter-embed/twitter";
-import {StyleProvider} from "../contexts/StyleContext";
 import "./Main.scss";
 import Profile from "./profile/Profile";
 
 export default class Main extends Component {
-  constructor(props) {
-    super(props);
-    // Set isDark to false permanently
-    this.state = {
-      isDark: false
-    };
-  }
-
-  // No need to check for dark mode preference or load from localStorage
-  componentDidMount() {
-    // Always use light mode
-    localStorage.setItem("isDark", false);
-  }
-
-  // Keep this method but make it do nothing (for compatibility with StyleContext)
-  changeTheme = () => {
-    // Do nothing - we're keeping light mode only
-  };
-
   render() {
     return (
       <div>
-        <StyleProvider
-          value={{isDark: false, changeTheme: this.changeTheme}}
-        >
-          <Header />
-          <Greeting />
-          <Skills />
-          <StackProgress />
-          <Education />
-          <WorkExperience />
-          <Projects />
-          <StartupProject />
-          <Achievement />
-          <Blogs />
-          <Talks />
-          <Twitter />
-          <Podcast />
-          <Profile />
-          <Footer />
-          <Top />
-        </StyleProvider>
+        <Header />
+        <Greeting />
+        <Skills />
+        <StackProgress />
+        <WorkExperience />
+        <Projects />
+        <StartupProject />
+        <Education />
+        <Achievement />
+        <Blogs />
+        <Talks />
+        <Twitter />
+        <Podcast />
+        <Profile />
+        <Footer />
+        <Top />
       </div>
     );
   }

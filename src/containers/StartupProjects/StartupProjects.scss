@@ -2,8 +2,10 @@
 
 .card-image {
   max-width: 100%;
+  max-height: 100%;
+  width: auto;
   height: auto;
-  width: 250px;
+  object-fit: contain;
 }
 .card-title {
   color: $titleColor;
@@ -24,7 +26,7 @@
   padding: 1.5rem;
   border-radius: 10px;
   border: 1px solid $lightBorder1;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .project-card-light {
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
@@ -33,27 +35,21 @@
   transition: all 0.3s ease;
 }
 
-.project-card-dark {
-  box-shadow: 0px 10px 30px -15px $darkBoxShadow;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.25s ease;
-}
-
 .project-detail {
   text-align: center;
 }
 .project-card-light:hover {
   box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
-}
-.project-card-dark:hover {
-  box-shadow: 0px 20px 30px -10px $darkBoxShadow;
+  transform: translateY(-6px);
 }
 .project-image {
   position: relative;
   height: 250px;
   overflow: hidden;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
 }
 
 .projects-container {

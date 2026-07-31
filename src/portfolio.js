@@ -14,7 +14,7 @@ const greeting = {
   username: "M. Zulqarnain",
   title: "Hi, I'm Zulqarnain",
   subTitle: emoji(
-    "A Senior Software & Applied AI Engineer 🚀 with a decade of experience designing and scaling backend systems across edtech, travel search, healthcare SaaS, and AI-driven investment platforms. Core expertise in Python, Django, and FastAPI — complemented by hands-on experience with AWS, data engineering, and agentic AI workflows."
+    "A Senior Software & Applied AI Engineer 🚀 with a decade of experience designing and scaling backend systems across edtech, travel search, healthcare SaaS, and AI-driven investment platforms — including products that served 40M+ learners. Core expertise in Python, Django, and FastAPI, complemented by hands-on experience with AWS, data engineering, and agentic AI workflows."
   ),
   resumeLink:
     "https://docs.google.com/document/d/1yU6obaAtZmotQwO8ZJmjApOCeSW0-ck0/",
@@ -38,11 +38,11 @@ const skillsSection = {
   subTitle: "SENIOR SOFTWARE & APPLIED AI ENGINEER BUILDING SCALABLE BACKENDS AND INTELLIGENT SYSTEMS",
   skills: [
     emoji(
-      "⚡ Design and scale backend systems using Python, Django, and FastAPI across distributed, high-availability architectures"
+      "⚡ Design and scale backend systems using Python, Django, and FastAPI across distributed, high-availability architectures serving millions of users"
     ),
     emoji("⚡ Build and integrate agentic AI workflows, LLM-powered pipelines, and MCP servers for intelligent automation"),
     emoji(
-      "⚡ Engineer data infrastructure, ETL pipelines, and full-stack web applications deployed on AWS"
+      "⚡ Engineer data infrastructure and ETL pipelines processing data for 500,000+ companies, plus full-stack web applications deployed on AWS"
     )
   ],
 
@@ -71,8 +71,8 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-react"
     },
     {
-      skillName: "Node.js",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "AI / LLM",
+      fontAwesomeClassname: "fas fa-robot"
     },
     {
       skillName: "Docker",
@@ -110,16 +110,20 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Backend",
+      Stack: "Backend & APIs",
+      progressPercentage: "100%"
+    },
+    {
+      Stack: "Data & Cloud Infra",
+      progressPercentage: "95%"
+    },
+    {
+      Stack: "AI / LLM Engineering",
       progressPercentage: "95%"
     },
     {
       Stack: "Frontend", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Scripting",
-      progressPercentage: "95%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -140,7 +144,7 @@ const workExperiences = {
         "Proposed and led the migration of the main product (Pascal) from Django templates to a modern FastAPI and ReactJS stack, owning the architectural decision and its implementation.",
         "Designed and maintained data pipelines that fetched and processed thousands of viable companies and startups daily, covering company profiles, GitHub activity, and founder backgrounds across a database of 500,000+ companies.",
         "Solely designed and built an end-to-end founder enrichment pipeline combining LinkedIn scraping, Google search scraping, and third-party tools like PhantomBuster, with full logging and step-level tracking.",
-        "Built a social presence tracking module monitoring follower counts and activity across GitHub, Product Hunt, YCombinator, Discord, and Twitter for every company in the database.",
+        "Replaced a complex form-based search with a simple full-text search experience, allowing investors to find companies and founders by typing naturally rather than filling out structured fields.",
         "Integrated LLM-powered automations to support business case evaluation, data filtration, categorization, and AI-driven decision workflows.",
         "Stack: Python · Django · FastAPI · PostgreSQL · AWS · Docker · Apache Airflow · Argo Workflows · Next.js · MCP · Vector Databases · Agentic AI Workflows"
       ]
@@ -202,7 +206,8 @@ const bigProjects = {
     {
       image: require("./assets/images/bsv-logo.jpg"),
       projectName: "Basis Set Ventures",
-      projectDesc: "Basis Set Ventures is an early-stage investment firm focused on artificial intelligence and its practical application.",
+      projectDesc:
+        "Basis Set Ventures is an early-stage investment firm focused on artificial intelligence and its practical application.",
       footerLink: [
         {
           name: "Visit Website",
@@ -214,7 +219,8 @@ const bigProjects = {
     {
       image: require("./assets/images/fkl-logo.jpg"),
       projectName: "FindKeepLove",
-      projectDesc: "FindKeepLove partners with brands, retailers, and consumers internet companies to offer exciting sweepstakes opportunities.",
+      projectDesc:
+        "FindKeepLove partners with brands, retailers, and consumers internet companies to offer exciting sweepstakes opportunities.",
       footerLink: [
         {
           name: "Visit Website",
@@ -226,7 +232,8 @@ const bigProjects = {
     {
       image: require("./assets/images/edx-logo.png"),
       projectName: "edX",
-      projectDesc: "edX is an American massive open online course provider created by Harvard and MIT. It hosts online university-level courses in a wide range of disciplines to a worldwide student body, including some courses at no charge. It also conducts research into learning based on how people use its platform.",
+      projectDesc:
+        "edX is an American massive open online course provider created by Harvard and MIT. It hosts online university-level courses in a wide range of disciplines to a worldwide student body, including some courses at no charge. It also conducts research into learning based on how people use its platform.",
       footerLink: [
         {
           name: "Visit Website",
@@ -238,7 +245,8 @@ const bigProjects = {
     {
       image: require("./assets/images/wanderu-logo.png"),
       projectName: "Wanderu",
-      projectDesc: "Wanderu is a ground and air travel metasearch engine that operates throughout North America and Europe. It provides a one-stop search and booking platform for buses, trains and flights through its website and mobile app. Wanderu is headquartered in Boston, Massachusetts.",
+      projectDesc:
+        "Wanderu is a ground and air travel metasearch engine that operates throughout North America and Europe. It provides a one-stop search and booking platform for buses, trains and flights through its website and mobile app. Wanderu is headquartered in Boston, Massachusetts.",
       footerLink: [
         {
           name: "Visit Website",
@@ -249,11 +257,24 @@ const bigProjects = {
     {
       image: require("./assets/images/vi-logo.png"),
       projectName: "Vital Interaction",
-      projectDesc: "Vital Interaction is a software provider specialized in automating complex communication workflows. Their premier product, the Automated Patient Interaction System, enables healthcare organizations to communicate more effectively with patients using text messaging, automated voice, and email.",
+      projectDesc:
+        "Vital Interaction is a software provider specialized in automating complex communication workflows. Their premier product, the Automated Patient Interaction System, enables healthcare organizations to communicate more effectively with patients using text messaging, automated voice, and email.",
       footerLink: [
         {
           name: "Visit Website",
           url: "https://vitalinteraction.com/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/tasseled-logo.svg"),
+      projectName: "Tasseled",
+      projectDesc:
+        "Tasseled is an education infrastructure company solving the national student debt crisis. We partner with states to show every student the most affordable path to their degree — deployed statewide in weeks, not years. The resources for affordable education already exist. They just need infrastructure to coordinate them.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://tasseled.com/"
         }
       ]
     }

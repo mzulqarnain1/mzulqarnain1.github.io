@@ -1,16 +1,30 @@
 @import "../../_globalColor";
 
 .platform-badges-section {
+  display: inline-block;
   margin-top: 32px;
+  padding: 20px 24px;
+  border-radius: 14px;
+  border: 1px solid $lightBorder1;
+  background-color: $lightBackground3;
+  box-shadow: $lightBoxShadowDark 0px 10px 30px -18px;
 }
 
 .platform-badges-label {
-  margin: 0 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 16px;
   font-size: 13px;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: $subTitle;
+  color: $titleColor;
+}
+
+.platform-badges-icon {
+  font-size: 15px;
+  line-height: 1;
 }
 
 .platform-badges-row {
@@ -18,4 +32,19 @@
   flex-wrap: wrap;
   align-items: flex-start;
   gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .platform-badges-section {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .platform-badges-label {
+    justify-content: center;
+  }
+  .platform-badges-row {
+    justify-content: center;
+  }
 }

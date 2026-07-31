@@ -4,11 +4,6 @@
   gap: 1.5rem;
 }
 
-.experience-heading {
-  font-size: 56px;
-  font-weight: 400;
-}
-
 .experience-container {
   display: flex;
   width: 90%;
@@ -24,15 +19,8 @@
 
 /* Media Query */
 
-@media (max-width: 1380px) {
-  .experience-heading {
-    font-size: 40px;
-  }
-}
-
 @media (max-width: 768px) {
   .experience-heading {
-    font-size: 30px;
     text-align: center;
   }
 }

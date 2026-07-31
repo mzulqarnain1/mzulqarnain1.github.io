@@ -1,9 +1,9 @@
-import React, {useState, useEffect, useContext, Suspense, lazy} from "react";
+import React, {useState, useEffect, Suspense, lazy} from "react";
 import "./Project.scss";
 import Button from "../../components/button/Button";
 import {openSource, socialMediaLinks} from "../../portfolio";
-import StyleContext from "../../contexts/StyleContext";
 import Loading from "../../containers/loading/Loading";
+import {Fade} from "react-reveal";
 export default function Projects() {
   const GithubRepoCard = lazy(() =>
     import("../../components/githubRepoCard/GithubRepoCard")
@@ -11,8 +11,6 @@ export default function Projects() {
   const FailedLoading = () => null;
   const renderLoader = () => <Loading />;
   const [repo, setrepo] = useState([]);
-  // todo: remove useContex because is not supported
-  const {isDark} = useContext(StyleContext);
 
   useEffect(() => {
     const getRepoData = () => {
@@ -50,14 +48,16 @@ export default function Projects() {
     return (
       <Suspense fallback={renderLoader()}>
         <div className="main" id="opensource">
-          <h1 className="project-title">Open Source Projects</h1>
-          <div className="repo-cards-div-main">
-            {repo.map((v, i) => {
-              return (
-                <GithubRepoCard repo={v} key={v.node.id} isDark={isDark} />
-              );
-            })}
-          </div>
+          <h1 className="project-title section-heading">
+            Open Source Projects
+          </h1>
+          <Fade bottom cascade damping={0.08}>
+            <div className="repo-cards-div-main">
+              {repo.map((v, i) => {
+                return <GithubRepoCard repo={v} key={v.node.id} />;
+              })}
+            </div>
+          </Fade>
           <Button
             text={"More Projects"}
             className="project-button"

@@ -5,7 +5,7 @@ import ColorThief from "colorthief";
 const VISIBLE_BULLET_COUNT = 3;
 const STACK_PREFIX = "Stack:";
 
-export default function ExperienceCard({cardInfo, isDark}) {
+export default function ExperienceCard({cardInfo}) {
   const [colorArrays, setColorArrays] = useState([]);
   const [expanded, setExpanded] = useState(false);
   const imgRef = createRef();
@@ -35,13 +35,10 @@ export default function ExperienceCard({cardInfo, isDark}) {
   const visibleBullets =
     expanded || !hasOverflow ? bullets : bullets.slice(0, VISIBLE_BULLET_COUNT);
 
-  const GetDescBullets = ({descBullets, isDark}) => {
+  const GetDescBullets = ({descBullets}) => {
     return descBullets
       ? descBullets.map((item, i) => (
-          <li
-            key={i}
-            className={isDark ? "subTitle dark-mode-text" : "subTitle"}
-          >
+          <li key={i} className="subTitle">
             {item}
           </li>
         ))
@@ -49,7 +46,7 @@ export default function ExperienceCard({cardInfo, isDark}) {
   };
 
   return (
-    <div className={isDark ? "experience-card-dark" : "experience-card"}>
+    <div className="experience-card">
       <div
         style={{background: rgb(colorArrays)}}
         className="experience-banner"
@@ -64,46 +61,18 @@ export default function ExperienceCard({cardInfo, isDark}) {
           onLoad={() => getColorArrays()}
         />
         <h5 className="experience-text-company">{cardInfo.company}</h5>
-        <h5
-          className={
-            isDark
-              ? "experience-text-date dark-mode-text"
-              : "experience-text-date"
-          }
-        >
-          {cardInfo.date}
-        </h5>
+        <h5 className="experience-text-date">{cardInfo.date}</h5>
       </div>
       <div className="experience-text-details">
-        <h5
-          className={
-            isDark
-              ? "experience-text-role dark-mode-text"
-              : "experience-text-role"
-          }
-        >
-          {cardInfo.role}
-        </h5>
-        <p
-          className={
-            isDark
-              ? "subTitle experience-text-desc dark-mode-text"
-              : "subTitle experience-text-desc"
-          }
-        >
-          {cardInfo.desc}
-        </p>
+        <h5 className="experience-text-role">{cardInfo.role}</h5>
+        <p className="subTitle experience-text-desc">{cardInfo.desc}</p>
         <ul className="experience-bullets">
-          <GetDescBullets descBullets={visibleBullets} isDark={isDark} />
+          <GetDescBullets descBullets={visibleBullets} />
         </ul>
         {hasOverflow && (
           <button
             type="button"
-            className={
-              isDark
-                ? "experience-toggle-btn dark-mode-text"
-                : "experience-toggle-btn"
-            }
+            className="experience-toggle-btn"
             onClick={() => setExpanded(!expanded)}
           >
             {expanded
@@ -114,10 +83,7 @@ export default function ExperienceCard({cardInfo, isDark}) {
         {techStack.length > 0 && (
           <ul className="experience-stack-pills">
             {techStack.map((tech, i) => (
-              <li
-                key={i}
-                className={isDark ? "stack-pill dark-mode" : "stack-pill"}
-              >
+              <li key={i} className="stack-pill">
                 {tech}
               </li>
             ))}
