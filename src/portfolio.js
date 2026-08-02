@@ -13,9 +13,8 @@ const illustration = {
 const greeting = {
   username: "M. Zulqarnain",
   title: "Hi, I'm Zulqarnain",
-  subTitle: emoji(
-    "A Senior Software & Applied AI Engineer 🚀 with a decade of experience designing and scaling backend systems across edtech, travel search, healthcare SaaS, and AI-driven investment platforms — including products that served 40M+ learners. Core expertise in Python, Django, and FastAPI, complemented by hands-on experience with AWS, data engineering, and agentic AI workflows."
-  ),
+  subTitle:
+    "Backend and applied AI engineer with about a decade of experience, most of it in Python, Django, and FastAPI. I've worked on systems in edtech (including a platform that reached 40M+ learners), travel search, healthcare, and most recently an AI-driven investment platform, picking up AWS, data pipelines, and LLM tooling along the way.",
   resumeLink:
     "https://docs.google.com/document/d/1yU6obaAtZmotQwO8ZJmjApOCeSW0-ck0/",
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -35,15 +34,11 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "SENIOR SOFTWARE & APPLIED AI ENGINEER BUILDING SCALABLE BACKENDS AND INTELLIGENT SYSTEMS",
+  subTitle: "Backend systems, data infrastructure, and the AI/LLM tooling wrapped around them",
   skills: [
-    emoji(
-      "⚡ Design and scale backend systems using Python, Django, and FastAPI across distributed, high-availability architectures serving millions of users"
-    ),
-    emoji("⚡ Build and integrate agentic AI workflows, LLM-powered pipelines, and MCP servers for intelligent automation"),
-    emoji(
-      "⚡ Engineer data infrastructure and ETL pipelines processing data for 500,000+ companies, plus full-stack web applications deployed on AWS"
-    )
+    "Backend systems in Python, Django, and FastAPI, built to hold up under real production load",
+    "LLM and agentic workflows: pipelines, MCP servers, automation that replaces work people used to do by hand",
+    "Data infrastructure and ETL, most recently for a database of 500,000+ companies, plus the AWS deployments that keep it running"
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -53,6 +48,11 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "Python",
       fontAwesomeClassname: "fab fa-python"
+    },
+    {
+      skillName: "Django",
+      svgPath:
+        "M11.146 0h3.924v18.166c-2.013.382-3.491.535-5.096.535-4.791 0-7.288-2.166-7.288-6.32 0-4.002 2.65-6.6 6.753-6.6.637 0 1.121.05 1.707.203zm0 9.143a3.894 3.894 0 00-1.325-.204c-1.988 0-3.134 1.223-3.134 3.365 0 2.09 1.096 3.236 3.109 3.236.433 0 .79-.025 1.35-.102V9.142zM21.314 6.06v9.098c0 3.134-.229 4.638-.917 5.937-.637 1.249-1.478 2.039-3.211 2.905l-3.644-1.733c1.733-.815 2.574-1.53 3.109-2.625.561-1.121.739-2.421.739-5.835V6.059h3.924zM17.39.021h3.924v4.026H17.39z"
     },
     {
       skillName: "AWS",
@@ -139,13 +139,14 @@ const workExperiences = {
       company: "Basis Set Ventures",
       companylogo: require("./assets/images/bsv-logo-2.jpg"),
       date: "May 2022 – Mar 2026",
-      desc: "Part of a 3-person engineering team building and maintaining the firm's core AI-driven investment platform across the full stack.",
+      desc: "One of three engineers building and running the firm's core investment platform, from backend services to the data pipelines feeding them.",
       descBullets: [
-        "Proposed and led the migration of the main product (Pascal) from Django templates to a modern FastAPI and ReactJS stack, owning the architectural decision and its implementation.",
-        "Designed and maintained data pipelines that fetched and processed thousands of viable companies and startups daily, covering company profiles, GitHub activity, and founder backgrounds across a database of 500,000+ companies.",
-        "Solely designed and built an end-to-end founder enrichment pipeline combining LinkedIn scraping, Google search scraping, and third-party tools like PhantomBuster, with full logging and step-level tracking.",
-        "Replaced a complex form-based search with a simple full-text search experience, allowing investors to find companies and founders by typing naturally rather than filling out structured fields.",
-        "Integrated LLM-powered automations to support business case evaluation, data filtration, categorization, and AI-driven decision workflows.",
+        "Proposed and led the rewrite of Pascal, our main product, from Django templates to FastAPI and React. It was my call to make the switch, and I owned the implementation.",
+        "Built and maintained the pipelines that pull in and process thousands of startups a day: company profiles, GitHub activity, founder background and education history, all feeding a database of over 500,000 companies.",
+        "Built a founder-enrichment pipeline on my own, combining LinkedIn scraping, Google search, and tools like PhantomBuster, with logging at every step so failures were easy to trace.",
+        "Built a social presence tracking module that pulled follower counts and activity for every company in the database, across GitHub, Product Hunt, YCombinator, Discord, and Twitter.",
+        "Replaced a clunky form-based search with plain full-text search, so investors could just type what they were looking for instead of filling out a form.",
+        "Added LLM-based automation for business case evaluation, data filtering, and categorization, parts of the process that used to be manual.",
         "Stack: Python · Django · FastAPI · PostgreSQL · AWS · Docker · Apache Airflow · Argo Workflows · Next.js · MCP · Vector Databases · Agentic AI Workflows"
       ]
     },
@@ -154,10 +155,10 @@ const workExperiences = {
       company: "Stack Builders",
       companylogo: require("./assets/images/sb-logo.jpg"),
       date: "Oct 2021 – Apr 2022",
-      desc: "Senior Software Engineer on the backend team at FindKeepLove, a platform where fashion and lifestyle brands run sweepstakes campaigns to engage wide audiences.",
+      desc: "Backend engineer at FindKeepLove, a platform fashion and lifestyle brands use to run sweepstakes campaigns.",
       descBullets: [
-        "Designed, developed, and maintained new features while resolving high-priority production issues across a Flask backend and ReactJS frontend.",
-        "Built a new recurring-payment and subscription-billing service from scratch with retry logic and automated alerting.",
+        "Shipped new features and fixed production issues across a Flask backend and React frontend.",
+        "Built the recurring-payment and subscription-billing service from scratch, with retry logic and alerting when charges failed.",
         "Stack: Python · Flask · ReactJS · MariaDB · Celery · Redis · Docker · CircleCI"
       ]
     },
@@ -166,11 +167,11 @@ const workExperiences = {
       company: "Arbisoft",
       companylogo: require("./assets/images/arbisoft-logo.jpg"),
       date: "Jan 2018 – Nov 2021",
-      desc: "Served two major clients — edX and Wanderu — across infrastructure maintenance and travel provider integrations.",
+      desc: "Worked with two clients, edX and Wanderu, on infrastructure and travel-provider integrations.",
       descBullets: [
-        "Worked directly with an edX Engineering Manager to maintain infrastructure across 140+ microservices, handling dependency upgrades, CI/CD updates, deprecations, and security patches at scale.",
-        "Built, maintained, and debugged 30+ ground and rail travel provider integrations for Wanderu, including major European providers such as FlixBus, Trenitalia, and RailEasy, covering thousands of stations and significant geolocation/maps API work.",
-        "Owned end-to-end integration for Trenitalia, RailEasy, and several other providers, handling both search and booking flows including credit card payment processing.",
+        "Worked directly with an edX engineering manager on infrastructure across 140+ microservices, doing the unglamorous but critical work: dependency upgrades, CI/CD changes, deprecations, security patches.",
+        "Built and maintained 30+ travel-provider integrations for Wanderu, including FlixBus, Trenitalia, and RailEasy, covering thousands of stations across Europe and a lot of geolocation and maps API work.",
+        "Owned the Trenitalia and RailEasy integrations top to bottom, including both search and booking flows and credit card payments.",
         "Stack: Python · Django · ReactJS · PostgreSQL · MongoDB · AWS · Kubernetes · Jenkins · GoCD"
       ]
     },
@@ -179,10 +180,10 @@ const workExperiences = {
       company: "QC Technologies",
       companylogo: require("./assets/images/qc-logo.png"),
       date: "Nov 2016 – Jan 2018",
-      desc: "Full-stack developer in the healthcare domain on Vital Interaction, an automated patient communication platform serving healthcare organizations across the US.",
+      desc: "Full-stack developer on Vital Interaction, a patient-communication platform used by healthcare organizations across the US.",
       descBullets: [
-        "Integrated hundreds of US medical facilities into the platform's appointment-automation portal using two-way SMS, email, and IVR workflows.",
-        "Shipped web application features and backend services supporting mobile applications, with active involvement in planning, architecture design, and direct client interaction.",
+        "Onboarded hundreds of US medical facilities onto the appointment-automation portal, built on two-way SMS, email, and IVR.",
+        "Shipped web features and backend services for the mobile apps, and was in the room for planning, architecture calls, and client conversations.",
         "Stack: Python · Django · MySQL · jQuery"
       ]
     }
@@ -194,20 +195,20 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Products",
-  subtitle: "Products that I have worked on",
+  title: "Selected Work",
+  subtitle: "A closer look at what I built and owned at each company",
   projects: [
     {
       image: require("./assets/images/bsv-logo.jpg"),
       projectName: "Basis Set Ventures",
       projectDesc:
-        "Basis Set Ventures is an early-stage investment firm focused on artificial intelligence and its practical application.",
+        "Led the rewrite of the firm's core investment platform from Django templates to FastAPI and React, and built a founder-enrichment pipeline (LinkedIn and Google scraping, PhantomBuster, verification) that covers a database of 500,000+ companies.",
       footerLink: [
         {
           name: "Visit Website",
@@ -220,7 +221,7 @@ const bigProjects = {
       image: require("./assets/images/fkl-logo.jpg"),
       projectName: "FindKeepLove",
       projectDesc:
-        "FindKeepLove partners with brands, retailers, and consumers internet companies to offer exciting sweepstakes opportunities.",
+        "Backend engineer on a Flask and React sweepstakes platform. Built the recurring-payment and subscription-billing service from scratch, with retry logic and alerting.",
       footerLink: [
         {
           name: "Visit Website",
@@ -233,7 +234,7 @@ const bigProjects = {
       image: require("./assets/images/edx-logo.png"),
       projectName: "edX",
       projectDesc:
-        "edX is an American massive open online course provider created by Harvard and MIT. It hosts online university-level courses in a wide range of disciplines to a worldwide student body, including some courses at no charge. It also conducts research into learning based on how people use its platform.",
+        "Worked directly with edX's engineering team keeping infrastructure healthy across 140+ microservices, for a platform that reached 40M+ learners worldwide.",
       footerLink: [
         {
           name: "Visit Website",
@@ -246,7 +247,7 @@ const bigProjects = {
       image: require("./assets/images/wanderu-logo.png"),
       projectName: "Wanderu",
       projectDesc:
-        "Wanderu is a ground and air travel metasearch engine that operates throughout North America and Europe. It provides a one-stop search and booking platform for buses, trains and flights through its website and mobile app. Wanderu is headquartered in Boston, Massachusetts.",
+        "Built and maintained 30+ travel-provider integrations, including FlixBus, Trenitalia, and RailEasy, covering thousands of stations and full booking flows with payment processing.",
       footerLink: [
         {
           name: "Visit Website",
@@ -258,7 +259,7 @@ const bigProjects = {
       image: require("./assets/images/vi-logo.png"),
       projectName: "Vital Interaction",
       projectDesc:
-        "Vital Interaction is a software provider specialized in automating complex communication workflows. Their premier product, the Automated Patient Interaction System, enables healthcare organizations to communicate more effectively with patients using text messaging, automated voice, and email.",
+        "Onboarded hundreds of US medical facilities onto an automated patient-communication portal built on two-way SMS, email, and IVR.",
       footerLink: [
         {
           name: "Visit Website",
@@ -270,7 +271,7 @@ const bigProjects = {
       image: require("./assets/images/tasseled-logo.svg"),
       projectName: "Tasseled",
       projectDesc:
-        "Tasseled is an education infrastructure company solving the national student debt crisis. We partner with states to show every student the most affordable path to their degree — deployed statewide in weeks, not years. The resources for affordable education already exist. They just need infrastructure to coordinate them.",
+        "Built a GraphQL API for Tasseled that sits between their frontend and an ArangoDB graph database, along with a number of new REST endpoints and feature work on the frontend itself.",
       footerLink: [
         {
           name: "Visit Website",
@@ -290,25 +291,9 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "ReactJS Nanodegree",
-      subtitle:
-        "In this Nanodegree program offered by Udacity.com, I learnt how to build declarative user interfaces for the web with React, and for iOS and Android with React Native. I also learnt how to manage state more predictably in applications with Redux.",
-      image: require("./assets/images/react-logo.png"),
-      footerLink: [
-        {
-          name: "Certificate",
-          url: "https://confirm.udacity.com/A7PHGVNK"
-        },
-        {
-          name: "Program Curriculum",
-          url: "https://www.udacity.com/course/react-nanodegree--nd019"
-        }
-      ]
-    },
-    {
       title: "AWS Cloud Developer Nanodegree",
       subtitle:
-        "In this Nanodegree program offered by Udacity.com, I am learning the fundamentals of cloud development and deployment with AWS. Then, building different apps leveraging microservices, Kubernetes clusters, and serverless application technology.",
+        "A Udacity Nanodegree covering the fundamentals of cloud development and deployment on AWS, including microservices, Kubernetes, and serverless architecture.",
       image: require("./assets/images/aws-logo.png"),
       footerLink: [
         {
@@ -318,6 +303,22 @@ const achievementSection = {
         {
           name: "Program Curriculum",
           url: "https://www.udacity.com/course/cloud-developer-nanodegree--nd9990"
+        }
+      ]
+    },
+    {
+      title: "ReactJS Nanodegree",
+      subtitle:
+        "A Udacity Nanodegree on building UIs with React (and React Native for iOS/Android), plus state management with Redux.",
+      image: require("./assets/images/react-logo.png"),
+      footerLink: [
+        {
+          name: "Certificate",
+          url: "https://confirm.udacity.com/A7PHGVNK"
+        },
+        {
+          name: "Program Curriculum",
+          url: "https://www.udacity.com/course/react-nanodegree--nd019"
         }
       ]
     }

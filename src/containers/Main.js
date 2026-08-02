@@ -16,6 +16,7 @@ import Top from "./topbutton/Top";
 import Twitter from "./twitter-embed/twitter";
 import "./Main.scss";
 import Profile from "./profile/Profile";
+import PlatformBadges from "../components/platformBadges/PlatformBadges";
 
 export default class Main extends Component {
   render() {
@@ -35,6 +36,7 @@ export default class Main extends Component {
         <Twitter />
         <Podcast />
         <Profile />
+        <PlatformBadges />
         <Footer />
         <Top />
       </div>

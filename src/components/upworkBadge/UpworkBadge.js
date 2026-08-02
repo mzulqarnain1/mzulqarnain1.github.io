@@ -5,7 +5,7 @@ export default function UpworkBadge() {
   return (
     <div className="upwork-badge-wrapper">
       <div className="upwork-card">
-        <svg width={64} viewBox="0 0 60 17" xmlns="http://www.w3.org/2000/svg">
+        <svg width={44} viewBox="0 0 60 17" xmlns="http://www.w3.org/2000/svg">
           <polygon
             points="10,0 12.35,4.13 17,4.86 13.7,8.02 14.51,12.64 10,10.4 5.49,12.64 6.3,8.02 3,4.86 7.65,4.13"
             fill="#14a800"

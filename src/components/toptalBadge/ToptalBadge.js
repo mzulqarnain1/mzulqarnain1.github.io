@@ -7,7 +7,7 @@ export default function ToptalBadge() {
       <div className="toptal-hex-outer">
         <div className="toptal-hex-inner">
           <svg
-            width={64}
+            width={44}
             viewBox="0 0 60 17"
             xmlns="http://www.w3.org/2000/svg"
           >

@@ -8,7 +8,6 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 
 import {illustration, greeting} from "../../portfolio";
-import PlatformBadges from "../../components/platformBadges/PlatformBadges";
 
 export default function Greeting() {
   if (!greeting.displayGreeting) {
@@ -36,7 +35,6 @@ export default function Greeting() {
                   variant="outline"
                 />
               </div>
-              <PlatformBadges />
             </div>
           </div>
           <div className="greeting-image-div">
