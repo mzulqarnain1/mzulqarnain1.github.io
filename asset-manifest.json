@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.9308ed11.chunk.css",
-    "main.js": "/static/js/main.000c1e5f.chunk.js",
-    "main.js.map": "/static/js/main.000c1e5f.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.147c0dea.js",
-    "runtime-main.js.map": "/static/js/runtime-main.147c0dea.js.map",
-    "static/js/2.2d84ecc9.chunk.js": "/static/js/2.2d84ecc9.chunk.js",
-    "static/js/2.2d84ecc9.chunk.js.map": "/static/js/2.2d84ecc9.chunk.js.map",
+    "main.css": "/static/css/main.7c8ce7f5.chunk.css",
+    "main.js": "/static/js/main.8e9a86d2.chunk.js",
+    "main.js.map": "/static/js/main.8e9a86d2.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4f875004.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4f875004.js.map",
+    "static/js/2.ee4f5314.chunk.js": "/static/js/2.ee4f5314.chunk.js",
+    "static/js/2.ee4f5314.chunk.js.map": "/static/js/2.ee4f5314.chunk.js.map",
     "static/css/3.b8d2ada0.chunk.css": "/static/css/3.b8d2ada0.chunk.css",
-    "static/js/3.03f16de7.chunk.js": "/static/js/3.03f16de7.chunk.js",
-    "static/js/3.03f16de7.chunk.js.map": "/static/js/3.03f16de7.chunk.js.map",
+    "static/js/3.4d0beda6.chunk.js": "/static/js/3.4d0beda6.chunk.js",
+    "static/js/3.4d0beda6.chunk.js.map": "/static/js/3.4d0beda6.chunk.js.map",
     "static/css/4.4bef6955.chunk.css": "/static/css/4.4bef6955.chunk.css",
     "static/js/4.f278eff8.chunk.js": "/static/js/4.f278eff8.chunk.js",
     "static/js/4.f278eff8.chunk.js.map": "/static/js/4.f278eff8.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.2fe929f9603b1f6f811ed1d086950f8b.js": "/precache-manifest.2fe929f9603b1f6f811ed1d086950f8b.js",
+    "precache-manifest.5a7a73350a49b9c15f0f599b1ee223bc.js": "/precache-manifest.5a7a73350a49b9c15f0f599b1ee223bc.js",
     "service-worker.js": "/service-worker.js",
     "static/css/3.b8d2ada0.chunk.css.map": "/static/css/3.b8d2ada0.chunk.css.map",
     "static/css/4.4bef6955.chunk.css.map": "/static/css/4.4bef6955.chunk.css.map",
-    "static/css/main.9308ed11.chunk.css.map": "/static/css/main.9308ed11.chunk.css.map",
-    "static/js/2.2d84ecc9.chunk.js.LICENSE.txt": "/static/js/2.2d84ecc9.chunk.js.LICENSE.txt",
+    "static/css/main.7c8ce7f5.chunk.css.map": "/static/css/main.7c8ce7f5.chunk.css.map",
+    "static/js/2.ee4f5314.chunk.js.LICENSE.txt": "/static/js/2.ee4f5314.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/Montserrat-Regular.ee653992.ttf",
     "static/media/arbisoft-logo.jpg": "/static/media/arbisoft-logo.54db718a.jpg",
     "static/media/aws-logo.png": "/static/media/aws-logo.6e189f85.png",
@@ -40,9 +40,9 @@
     "static/media/wanderu-logo.png": "/static/media/wanderu-logo.d7ae0407.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.147c0dea.js",
-    "static/js/2.2d84ecc9.chunk.js",
-    "static/css/main.9308ed11.chunk.css",
-    "static/js/main.000c1e5f.chunk.js"
+    "static/js/runtime-main.4f875004.js",
+    "static/js/2.ee4f5314.chunk.js",
+    "static/css/main.7c8ce7f5.chunk.css",
+    "static/js/main.8e9a86d2.chunk.js"
   ]
 }
